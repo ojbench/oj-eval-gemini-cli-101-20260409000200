@@ -16,7 +16,7 @@ int main() {
     for (long long v = 0; v <= max_v; ++v) {
         long long target_time = v * b * a + v * a + v;
         long long s = target_time - current_time;
-        if (s < 0) {
+        if (s <= 0) {
             s += D;
         }
         if (min_s == -1 || s < min_s) {
